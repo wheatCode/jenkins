@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                          sh 'node -v'
                 sh 'npm install -g npm@latest'
                 sh 'npm install'
                 sh 'node node_modules/puppeteer/install.js'
