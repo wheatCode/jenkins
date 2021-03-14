@@ -1,0 +1,15 @@
+{
+  "name": "puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./__tests__/e2etest/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "easy-pdf-merge": "^0.2.6",
+    "puppeteer": "^8.0.0"
+  }
+}
