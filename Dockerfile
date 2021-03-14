@@ -1,9 +1,9 @@
 FROM node:latest
 COPY . /app/
+WORKDIR /app/
 RUN npm install -g npm@latest
 RUN npm install 
 RUN node node_modules/puppeteer/install.js
-WORKDIR /app/
 EXPOSE 3000
 
 
