@@ -8,7 +8,6 @@ pipeline {
                 sh 'npm install'
                 sh 'node node_modules/puppeteer/install.js'
                 sh 'mkdir pdf'
-                sh 'mkdir img'
                 sh 'ls'
                 sh 'npm run test'
             }
