@@ -7,7 +7,6 @@ pipeline {
                 sh 'npm install -g npm@latest'
                 sh 'npm install'
                 sh 'node node_modules/puppeteer/install.js'
-                sh 'mkdir pdf'
                 sh 'ls'
                 sh 'npm run test'
             }
