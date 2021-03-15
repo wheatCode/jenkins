@@ -2,7 +2,11 @@ pipeline {
     agent none
     stages {
         stage('Test') {
-            agent { dockerfile true }
+          agent {
+                dockerfile {
+                    filename 'Dockerfile'
+                }
+            }
             steps {
                 sh 'node -v'
                 sh 'npm install -g npm@latest'
